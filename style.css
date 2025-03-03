@@ -1,32 +1,57 @@
+@import url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+
 body {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: 'HankenGro', sans-serif;
+  font-size: 16px;
 }
 
 .container {
   display: grid;
   gap: 20px;
+  max-width: 350px;
+  
+  
 }
 
 .top-section {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid brown;
-  gap: 10px;
+  border: 2px solid hsl(241, 81%, 54%);
+  gap: 15px;
   border-radius: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+  color: white;
+  margin-top: -15px;
+  margin-left: -15px;
 }
 
 .top-section > p {
-  border: 2px solid brown;
+  border: 2px;
 }
 
 .top-section > div {
   text-align: center;
-  border: 2px solid brown;
+  /* border: 2px solid; */
+}
+
+.result-sta {
+  max-width: 300px;
+  color: hsl(221, 100%, 96%);
+}
+
+.your-result, .of {
+  color:hsla(221, 100%, 96%, 0.7);
+}
+
+.total {
+  color: rgb(151, 153, 156);
 }
 
 .circle {
@@ -35,17 +60,34 @@ body {
   border-radius: 50%;
   display: grid;
  justify-content: center;
+ background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   
 }
 
-.circle > p > span {
+.memory-text {
+  color: hsl(39, 100%, 56%);
+}
+
+.reaction-text {
+  color: hsl(0, 100%, 67%);
+}
+
+.verbal-text {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual-text {
+  color: hsl(234, 85%, 45%);
+}
+
+.seventy {
   font-size: 50px;
 }
 
 .circle > p {
   max-width: min-content;
   text-align: center;
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
 }
 
 .middle-section {
@@ -64,7 +106,7 @@ body {
   /* justify-content: center; */
   align-items: center;
   /* gri: 40px; */
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
   margin-inline: 40px;
   padding: 15px;
   border-radius: 15px;
@@ -75,19 +117,48 @@ body {
   align-self: flex-end;
 }
 
+.great {
+  color: white;
+  font-size: 18px;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.15);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.15)
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.15);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.15);
+}
+
 .section-button {
   justify-self: center;
 }
 
 button {
-  width: 550px;
+  width: 280px;
   /* margin: auto; */
   align-self: center;
   justify-self: center;
-  border: 2px solid brown ;
+  border: 2px solid hsl(224, 30%, 27%) ;
   text-align: center;
   padding: 20px;
   border-radius: 100px;
+  color: white;
+   background-color: hsl(224, 30%, 27%);
+   font-size: 18px;
+}
+
+button:hover {
+  background-color: hsla(224, 30%, 27%, 0.6);
+  cursor: pointer;
 }
 
 .attribution { 
